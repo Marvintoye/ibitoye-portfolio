@@ -1,1 +1,153 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
+body{
+font-family:'Inter',sans-serif;
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-weight:700;
+font-size:20px;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.navbar a{
+text-decoration:none;
+color:#cbd5f5;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:100px 10%;
+}
+
+.hero-text h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero-text p{
+color:#94a3b8;
+margin-bottom:20px;
+}
+
+.hero-image img{
+width:280px;
+border-radius:20px;
+}
+
+.btn{
+background:#6366f1;
+padding:12px 28px;
+border-radius:30px;
+text-decoration:none;
+color:white;
+}
+
+/* SECTIONS */
+
+.section{
+padding:80px 10%;
+}
+
+.section h2{
+font-size:32px;
+margin-bottom:30px;
+}
+
+/* ABOUT */
+
+.about-text{
+max-width:700px;
+color:#cbd5f5;
+}
+
+/* SKILLS */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:15px;
+}
+
+.skill{
+background:#1e293b;
+padding:12px;
+text-align:center;
+border-radius:10px;
+}
+
+/* PROJECTS */
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:#1e293b;
+border-radius:15px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+.project-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.project-info{
+padding:20px;
+}
+
+.project-info h3{
+margin-bottom:10px;
+}
+
+/* CONTACT */
+
+.contact p{
+margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+color:#64748b;
+}
