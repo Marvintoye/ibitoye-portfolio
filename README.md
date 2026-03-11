@@ -63,8 +63,8 @@ I am pursuing further growth in **software development, systems design, and emer
 
 - **Email:** [ibitoyemarvellous1@gmail.com](mailto:ibitoyemarvellous1@gmail.com)  
 - **Phone:** +234 811 436 4139  
-- **GitHub:** [github.com/Marvintoye](https://github.com/Marvintoye)  
-  - **Linkedin**[https://www.linkedin.com/in/marvellous-ibitoye-a18075193/]
+- **GitHub:** [github.com/Marvintoye](https://github.com/Marvintoye)
+- **Linkedin**[https://www.linkedin.com/in/marvellous-ibitoye-a18075193/]
 ---
 
 ## Technologies Used
