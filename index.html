@@ -1,178 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ibitoye Marvellous Portfolio</title>
+<title>Ibitoye Marvellous | Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div class="bento">
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">IM</div>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
 
 <!-- HERO -->
-<header class="bento-item header">
 
-<h1>Ibitoye Marvellous Olalekan</h1>
+<section class="hero">
 
-<p>Computer Science Graduate | Aspiring MSc Student | Founder of HunterVillage</p>
+<div class="hero-text">
 
-<a href="#contact" class="btn">Contact Me</a>
+<h1>Ibitoye Marvellous</h1>
 
-</header>
+<p>
+Computer Science Graduate • Web Developer • Founder of HunterVillage
+</p>
+
+<a href="#projects" class="btn">View My Work</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="assets/images/profile.jpg">
+
+</div>
+
+</section>
 
 
 <!-- ABOUT -->
-<section class="bento-item about">
 
-<img src="assets/images/profile.jpg" alt="Profile Photo" class="profile-img">
+<section id="about" class="section">
 
 <h2>About Me</h2>
 
-<p>
-Computer Science graduate from Crown Polytechnic.
-Founder of <strong>HunterVillage</strong>, a platform connecting professionals.
+<p class="about-text">
 
-Experienced in web development, data analysis, UI design and project leadership.
+Computer Science graduate from Crown Polytechnic. Founder of **HunterVillage**, a platform designed to connect professionals and enable collaboration.
+
+Passionate about building scalable web platforms, solving real-world problems through technology, and continuously improving technical expertise in web development and data analysis.
+
 </p>
 
 </section>
 
 
 <!-- SKILLS -->
-<section class="bento-item skills">
+
+<section id="skills" class="section">
 
 <h2>Technical Skills</h2>
 
-<ul class="skills-list">
+<div class="skills-grid">
 
-<li>HTML / CSS</li>
-<li>Web Development</li>
-<li>Webflow</li>
-<li>Git & GitHub</li>
-<li>Data Analysis</li>
-<li>Microsoft Excel</li>
-<li>UI/UX Design</li>
-<li>Project Management</li>
-<li>Research Skills</li>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Git & GitHub</div>
+<div class="skill">Webflow</div>
+<div class="skill">Data Analysis</div>
+<div class="skill">Excel</div>
+<div class="skill">UI/UX Design</div>
 
-</ul>
-
-</section>
-
-
-<!-- FEATURED PROJECT -->
-<section class="bento-item project-featured">
-
-<img src="assets/projects/huntervillage.jpg" alt="HunterVillage Project" class="project-img">
-
-<h3>HunterVillage Platform</h3>
-
-<p><strong>Role:</strong> Founder & Project Manager</p>
-
-<p>Platform concept connecting professionals and enabling collaboration.</p>
-
-<a href="https://inventive-increase-545084.framer.app/" target="_blank">
-View Project
-</a>
+</div>
 
 </section>
 
 
 <!-- PROJECTS -->
-<section class="bento-item projects">
+
+<section id="projects" class="section">
 
 <h2>Projects</h2>
 
-<div class="project-item">
+<div class="projects-grid">
 
-<img src="assets/projects/portfolio.jpg" class="project-img">
+<div class="project-card">
 
-<h4>Personal Portfolio</h4>
+<img src="assets/projects/huntervillage.jpg">
 
-<p>Built with HTML & CSS.</p>
+<div class="project-info">
 
-</div>
+<h3>HunterVillage Platform</h3>
 
-<div class="project-item">
+<p>Professional collaboration platform concept.</p>
 
-<img src="assets/projects/data-analysis.jpg" class="project-img">
-
-<h4>Data Analysis Project</h4>
-
-<p>Dataset analysis using Excel.</p>
+<a href="https://inventive-increase-545084.framer.app/" target="_blank">Live Demo</a>
 
 </div>
 
-<div class="project-item">
+</div>
 
-<img src="assets/projects/veterans.jpg" class="project-img">
 
-<h4>Veterans Without Benefits</h4>
+<div class="project-card">
 
-<p>HTML & CSS web development project.</p>
+<img src="assets/projects/portfolio.jpg">
+
+<div class="project-info">
+
+<h3>Developer Portfolio</h3>
+
+<p>Modern responsive portfolio built with HTML & CSS.</p>
 
 </div>
 
-</section>
+</div>
 
 
-<!-- EXPERIENCE -->
-<section class="bento-item leadership">
+<div class="project-card">
 
-<h2>Leadership & Experience</h2>
+<img src="assets/projects/data-analysis.jpg">
 
-<ul>
+<div class="project-info">
 
-<li><strong>Project Manager</strong> – Coordinated teams and tasks.</li>
+<h3>Data Analysis</h3>
 
-<li><strong>President – Computer Science Dept</strong></li>
-
-<li><strong>Financial Secretary – Student Union</strong></li>
-
-</ul>
-
-</section>
-
-
-<!-- CERTIFICATES -->
-<section class="bento-item certificates">
-
-<h2>Certificates</h2>
-
-<div class="cert-grid">
-
-<div class="certificate">
-
-<img src="assets/certificates/cert1.jpg">
-
-<p>Web Development Certificate</p>
+<p>Dataset analysis and visualization using Excel.</p>
 
 </div>
 
-<div class="certificate">
-
-<img src="assets/certificates/cert2.jpg">
-
-<p>Data Analysis Certificate</p>
-
 </div>
 
-<div class="certificate">
-
-<img src="assets/certificates/cert3.jpg">
-
-<p>Leadership Certificate</p>
-
-</div>
 
 </div>
 
@@ -180,28 +158,28 @@ View Project
 
 
 <!-- CONTACT -->
-<section class="bento-item contact" id="contact">
+
+<section id="contact" class="section contact">
 
 <h2>Contact</h2>
 
-<p>Email: <a href="mailto:ibitoyemarvellous1@gmail.com">ibitoyemarvellous1@gmail.com</a></p>
+<p>Email: ibitoyemarvellous1@gmail.com</p>
 
 <p>Phone: +234 811 436 4139</p>
 
-<p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+<p>
+GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a>
+</p>
 
 </section>
 
 
-<!-- FOOTER -->
-<footer class="bento-item footer">
+<footer>
 
-<p>© 2026 Ibitoye Marvellous Olalekan</p>
+<p>© 2026 Ibitoye Marvellous</p>
 
 </footer>
 
-</div>
 
 </body>
-
 </html>
