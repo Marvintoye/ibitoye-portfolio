@@ -1,1 +1,188 @@
+FULL CSS (style.css)
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
+body{
+font-family:'Roboto',sans-serif;
+background:#f8fafc;
+color:#0f172a;
+padding:2rem;
+line-height:1.5;
+}
+
+/* GRID */
+
+.bento{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:1.5rem;
+}
+
+.bento-item{
+background:white;
+padding:1.5rem;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,0.05);
+transition:0.2s;
+}
+
+.bento-item:hover{
+transform:translateY(-5px);
+box-shadow:0 20px 35px rgba(0,0,0,0.15);
+}
+
+/* HEADER */
+
+.header{
+grid-column:span 4;
+text-align:center;
+background:linear-gradient(135deg,#1e293b,#0f172a);
+color:white;
+}
+
+.header h1{
+font-size:2.5rem;
+margin-bottom:.5rem;
+}
+
+.btn{
+display:inline-block;
+margin-top:1rem;
+padding:.6rem 1.4rem;
+background:#6366f1;
+color:white;
+border-radius:30px;
+text-decoration:none;
+}
+
+/* ABOUT */
+
+.about{
+grid-column:span 2;
+text-align:center;
+}
+
+.profile-img{
+width:150px;
+border-radius:50%;
+margin-bottom:1rem;
+}
+
+/* SKILLS */
+
+.skills{
+grid-column:span 2;
+}
+
+.skills-list{
+display:flex;
+flex-wrap:wrap;
+gap:.5rem;
+margin-top:1rem;
+list-style:none;
+}
+
+.skills-list li{
+background:#eef2ff;
+padding:.4rem .9rem;
+border-radius:30px;
+font-size:.9rem;
+}
+
+/* FEATURED PROJECT */
+
+.project-featured{
+grid-column:span 2;
+background:#fef9c3;
+border-left:5px solid #eab308;
+}
+
+.project-img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+/* PROJECTS */
+
+.projects{
+grid-column:span 2;
+}
+
+.project-item{
+margin-top:1rem;
+padding-top:1rem;
+border-top:1px dashed #ccc;
+}
+
+/* EXPERIENCE */
+
+.leadership{
+grid-column:span 2;
+}
+
+/* CERTIFICATES */
+
+.certificates{
+grid-column:span 2;
+}
+
+.cert-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:1rem;
+margin-top:1rem;
+}
+
+.certificate img{
+width:100%;
+border-radius:8px;
+}
+
+/* CONTACT */
+
+.contact{
+grid-column:span 2;
+}
+
+/* FOOTER */
+
+.footer{
+grid-column:span 4;
+text-align:center;
+color:#64748b;
+background:transparent;
+box-shadow:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.bento{
+grid-template-columns:repeat(2,1fr);
+}
+
+.header,
+.footer{
+grid-column:span 2;
+}
+
+}
+
+@media(max-width:600px){
+
+.bento{
+grid-template-columns:1fr;
+}
+
+.bento-item{
+grid-column:span 1;
+}
+
+}
