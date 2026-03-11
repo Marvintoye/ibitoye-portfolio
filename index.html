@@ -12,26 +12,29 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
 </head>
+
 
 <body>
 
-<div class="cursor"></div>
+<div id="particles"></div>
+
 
 <!-- NAVBAR -->
 
-<nav class="navbar">
+<nav>
 
-<div class="logo">IM</div>
+<h3>IM</h3>
 
-<ul>
+<div>
 
-<li><a href="#about">About</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#contact">Contact</a></li>
+<button id="themeToggle">🌙</button>
 
-</ul>
+</div>
 
 </nav>
 
@@ -42,123 +45,92 @@
 
 <h1>
 
-Hi, I'm <span>Ibitoye</span><br>
-
-I build modern web experiences.
+Hi, I'm <span>Ibitoye</span>
 
 </h1>
 
 <p>
 
-Computer Science Graduate • Founder of HunterVillage
+Founder of HunterVillage • Web Developer
 
 </p>
-
-<a href="#projects" class="btn">View Work</a>
 
 </section>
 
 
-<!-- ABOUT -->
+<!-- BENTO GRID -->
 
-<section id="about" class="section reveal">
+<section class="bento">
 
-<h2>About Me</h2>
+<div class="card large">
+
+<h2>About</h2>
 
 <p>
 
-Computer Science graduate passionate about building modern digital products.
-
-Founder of HunterVillage — a platform designed to connect professionals and foster collaboration.
+Computer Science graduate passionate about building modern web platforms.
 
 </p>
 
-</section>
-
-
-<!-- PROJECTS -->
-
-<section id="projects" class="section reveal">
-
-<h2>Projects</h2>
-
-<div class="projects">
-
-<div class="project-card">
-
-<img src="assets/projects/huntervillage.jpg">
-
-<h3>HunterVillage</h3>
-
-<p>Professional collaboration platform concept.</p>
-
 </div>
 
-<div class="project-card">
 
-<img src="assets/projects/portfolio.jpg">
-
-<h3>Portfolio Website</h3>
-
-<p>Responsive developer portfolio.</p>
-
-</div>
-
-<div class="project-card">
-
-<img src="assets/projects/data-analysis.jpg">
-
-<h3>Data Analysis</h3>
-
-<p>Data insights using Excel.</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- SKILLS -->
-
-<section id="skills" class="section reveal">
+<div class="card tilt">
 
 <h2>Skills</h2>
 
-<div class="skills">
+<ul>
 
-<span>HTML</span>
-<span>CSS</span>
-<span>JavaScript</span>
-<span>Git</span>
-<span>Webflow</span>
-<span>Data Analysis</span>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>Git</li>
+
+</ul>
 
 </div>
 
-</section>
+
+<div class="card tilt">
+
+<h2>Projects</h2>
+
+<button onclick="openModal()">
+
+View Projects
+
+</button>
+
+</div>
 
 
-<!-- CONTACT -->
-
-<section id="contact" class="section reveal">
+<div class="card">
 
 <h2>Contact</h2>
 
 <p>Email: ibitoyemarvellous1@gmail.com</p>
 
-<p>Phone: +234 811 436 4139</p>
-
-<p>GitHub: github.com/yourusername</p>
+</div>
 
 </section>
 
 
-<footer>
+<!-- PROJECT MODAL -->
 
-© 2026 Ibitoye Marvellous
+<div id="projectModal" class="modal">
 
-</footer>
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">×</span>
+
+<h2>My Projects</h2>
+
+<div id="githubProjects"></div>
+
+</div>
+
+</div>
+
 
 <script src="script.js"></script>
 
