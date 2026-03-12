@@ -1,116 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ibitoye Marvellous Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <main class="layout">
+      <section class="panel intro">
+        <div class="intro-top">
+          <p class="eyebrow">Available for freelance</p>
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        </div>
 
-<head>
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Portrait of Ibitoye Marvellous" class="profile" />
+        <h1>Ibitoye Marvellous</h1>
+        <p class="headline">Founder @ HunterVillage · Front-End Developer · Data Analyst</p>
+        <p class="bio">
+          I craft high-converting portfolio websites and practical business tools that help people launch faster,
+          communicate better, and grow online.
+        </p>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <div class="socials">
+          <a href="mailto:ibitoyemarvellous1@gmail.com">Email</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
 
-<title>Ibitoye Marvellous Portfolio</title>
+      <section class="panel highlights">
+        <article class="card featured">
+          <p class="label">Now building</p>
+          <h2>Launch-ready digital experiences for founders and creators.</h2>
+          <p>
+            From landing pages to full portfolio systems, I combine elegant design and clean JavaScript to create
+            interfaces that feel premium and perform smoothly.
+          </p>
+        </article>
 
-<link rel="stylesheet" href="style.css">
+        <article class="card stats">
+          <div>
+            <h3>18+</h3>
+            <p>Projects Delivered</p>
+          </div>
+          <div>
+            <h3>4 yrs</h3>
+            <p>Building on the web</p>
+          </div>
+          <div>
+            <h3>100%</h3>
+            <p>Client-focused workflow</p>
+          </div>
+        </article>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <article class="card">
+          <h3>Core Skills</h3>
+          <ul class="chips">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React Basics</li>
+            <li>Webflow</li>
+            <li>Data Analysis</li>
+            <li>Git & GitHub</li>
+            <li>UI Systems</li>
+          </ul>
+        </article>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+        <article class="card">
+          <h3>Experience</h3>
+          <div class="timeline">
+            <div>
+              <p class="timeline-title">Founder · HunterVillage</p>
+              <p class="muted">2023 — Present</p>
+            </div>
+            <div>
+              <p class="timeline-title">Freelance Web Developer</p>
+              <p class="muted">2021 — Present</p>
+            </div>
+            <div>
+              <p class="timeline-title">Computer Science Graduate</p>
+              <p class="muted">OAU, Ile-Ife</p>
+            </div>
+          </div>
+        </article>
 
-</head>
+        <article class="card wide">
+          <div class="row between">
+            <h3>Selected Projects</h3>
+            <button id="openProjects" class="btn">See all</button>
+          </div>
+          <div class="project-list" id="projectPreview"></div>
+        </article>
+      </section>
+    </main>
 
-<body>
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <div class="row between">
+          <h2>GitHub Projects</h2>
+          <button class="btn ghost" id="closeModal">Close</button>
+        </div>
+        <div id="projectsContainer" class="repo-grid"></div>
+      </div>
+    </div>
 
-<button id="themeToggle">🌙</button>
-
-<header>
-
-<div class="hero">
-
-<img src="assets/profile.jpg" class="profile">
-
-<h1>Ibitoye Marvellous</h1>
-
-<p>Founder of HunterVillage • Web Developer • Data Analyst</p>
-
-</div>
-
-</header>
-
-
-<section class="bento">
-
-<div class="card large">
-
-<h2>About Me</h2>
-
-<p>
-Computer Science graduate passionate about building digital platforms and solving real-world problems using technology.
-</p>
-
-</div>
-
-
-<div class="card tilt">
-
-<h3>Skills</h3>
-
-<ul>
-
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>Git</li>
-<li>Webflow</li>
-<li>Excel Data Analysis</li>
-
-</ul>
-
-</div>
-
-
-<div class="card tilt">
-
-<h3>Projects</h3>
-
-<button onclick="openModal()">View Projects</button>
-
-</div>
-
-
-<div class="card tilt">
-
-<h3>Certificates</h3>
-
-<img src="assets/certificate1.jpg" class="cert">
-
-</div>
-
-
-<div class="card">
-
-<h3>Contact</h3>
-
-<p>Email: ibitoyemarvellous1@gmail.com</p>
-<p>Phone: +2348114364139</p>
-
-</div>
-
-</section>
-
-
-<div id="modal" class="modal">
-
-<div class="modal-content">
-
-<span class="close" onclick="closeModal()">×</span>
-
-<h2>GitHub Projects</h2>
-
-<div id="projectsContainer"></div>
-
-</div>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
