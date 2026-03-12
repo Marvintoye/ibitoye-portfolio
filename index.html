@@ -6,46 +6,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ibitoye Marvellous | Portfolio</title>
+<title>Ibitoye Marvellous</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.0.5/dist/lenis.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
 </head>
 
-
 <body>
 
-<div id="particles"></div>
-
-
-<!-- NAVBAR -->
-
-<nav>
-
-<h3>IM</h3>
-
-<div>
-
-<button id="themeToggle">🌙</button>
-
-</div>
-
-</nav>
-
-
-<!-- HERO -->
-
-<section class="hero">
+<header>
 
 <h1>
 
-Hi, I'm <span>Ibitoye</span>
+Ibitoye Marvellous
 
 </h1>
 
@@ -55,10 +33,7 @@ Founder of HunterVillage • Web Developer
 
 </p>
 
-</section>
-
-
-<!-- BENTO GRID -->
+</header>
 
 <section class="bento">
 
@@ -68,7 +43,7 @@ Founder of HunterVillage • Web Developer
 
 <p>
 
-Computer Science graduate passionate about building modern web platforms.
+Computer Science graduate passionate about building modern platforms and solving real-world problems with technology.
 
 </p>
 
@@ -77,7 +52,7 @@ Computer Science graduate passionate about building modern web platforms.
 
 <div class="card tilt">
 
-<h2>Skills</h2>
+<h3>Skills</h3>
 
 <ul>
 
@@ -93,7 +68,7 @@ Computer Science graduate passionate about building modern web platforms.
 
 <div class="card tilt">
 
-<h2>Projects</h2>
+<h3>Projects</h3>
 
 <button onclick="openModal()">
 
@@ -106,31 +81,32 @@ View Projects
 
 <div class="card">
 
-<h2>Contact</h2>
+<h3>Contact</h3>
 
-<p>Email: ibitoyemarvellous1@gmail.com</p>
+<p>
+
+Email: ibitoyemarvellous1@gmail.com
+
+</p>
 
 </div>
 
 </section>
 
 
-<!-- PROJECT MODAL -->
-
-<div id="projectModal" class="modal">
+<div id="modal" class="modal">
 
 <div class="modal-content">
 
-<span class="close" onclick="closeModal()">×</span>
+<span onclick="closeModal()">×</span>
 
-<h2>My Projects</h2>
+<h2>Projects</h2>
 
 <div id="githubProjects"></div>
 
 </div>
 
 </div>
-
 
 <script src="script.js"></script>
 
